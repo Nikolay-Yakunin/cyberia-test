@@ -1,5 +1,5 @@
 {
-  "name": "cyberia",
+  "name": "cyberia-test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -33,6 +33,7 @@
     "prettier": "3.5.1",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
-    "vite": "^6.1.0"
+    "vite": "^6.1.0",
+    "vite-plugin-gh-pages": "^1.0.1"
   }
 }
