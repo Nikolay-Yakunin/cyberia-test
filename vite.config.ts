@@ -14,4 +14,5 @@ export default defineConfig({
     outDir: "build",
     emptyOutDir: true,
   },
+  base: '/cyberia-test/',
 });
