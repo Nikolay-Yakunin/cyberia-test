@@ -1,0 +1,91 @@
+/* Card.module.css */
+.card {
+  width: 387px;
+  height: 378px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  gap: 6px;
+  width: 122px;
+  height: 122px;
+  top: 23px;
+  left: 238px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+  background-color: var(--secondary-bg);
+  border-radius: 5px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.link {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -6px;
+  right: -6px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  display: none;
+  font-size: 13px;
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 327px;
+    max-height: 320px;
+  }
+
+  .overlay {
+    position: static;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: transparent;
+    background: linear-gradient(180deg, #31334100 0%, #090b21 100%);
+    padding: 29px 23px;
+  }
+
+  .link {
+    position: static;
+    display: block;
+    width: 17px;
+    height: 17px;
+  }
+
+  .link rect {
+    fill: white;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    display: block;
+  }
+}

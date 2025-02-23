@@ -1,0 +1,32 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 65px;
+  margin-bottom: 52px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 31px;
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+@media (max-width: 480px) {
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7px;
+    row-gap: 17px;
+    margin-top: 47px;
+    margin-bottom: 40px;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}

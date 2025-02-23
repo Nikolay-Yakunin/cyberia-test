@@ -1,0 +1,48 @@
+.button {
+  overflow: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: var(--radius-small);
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+.primary {
+  background-color: var(--primary-bg);
+  color: var(--font-color-default);
+}
+
+.secondary {
+  background-color: var(--secondary-bg);
+  color: var(--font-color-acent);
+}
+
+.round {
+  border-radius: var(--radius-large);
+  padding: 20px 65px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 102px;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 12px;
+    padding: 8px auto;
+  }
+
+  .round {
+    padding: 15px auto;
+  }
+
+  .buttonGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,19 @@
+.breadcrumb {
+  display: flex;
+  gap:5px;
+  margin-bottom: 65px;
+  color: var(--font-color-disabled);
+  font-weight: normal;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--font-color-active);
+  font-weight: bold;
+}
+
+.active {
+  text-decoration: none;
+  color: var(--font-color-disabled);
+  cursor: pointer;
+}

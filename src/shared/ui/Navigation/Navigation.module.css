@@ -1,0 +1,39 @@
+.list {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+}
+
+.horizontal {
+  gap: 60px;
+}
+
+.vertical {
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+  gap: 25px 50px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--font-color-default);
+  font-weight: bold;
+}
+
+.link:hover {
+  color: var(--font-color-acent);
+}
+
+@media (max-width: 480px) {
+  .vertical {
+    height: 100px;
+    gap: 15px;
+  }
+
+  .item,
+  .list,
+  .vertical {
+    font-size: 13px;
+  }
+}

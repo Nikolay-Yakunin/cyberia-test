@@ -1,0 +1,135 @@
+.section {
+  margin-bottom: 100px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact {
+  display: none;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  gap: 40px;
+  color: var(--font-color-active);
+  margin-top: 90px;
+}
+
+.input,
+textarea {
+  color: var(--font-color-active);
+  border: 2px solid var(--font-color-active);
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  background: transparent;
+  height: 100%;
+  padding: 10px 10px;
+  resize: none;
+  font-size: 13px;
+}
+
+.input::placeholder,
+textarea::placeholder {
+  color: transparent;
+}
+
+.inputLabel {
+  position: relative;
+  top: 9px;
+  left: 20px;
+  background-color: #282935;
+  transition: 0.2s ease-in-out;
+  pointer-events: none;
+  padding: 9px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.messageContainer,
+.checkboxLabel {
+  grid-column: 1 / 4;
+}
+
+#checkbox {
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--font-color-active);
+  border-radius: 2px;
+  background: none;
+  appearance: none;
+  transition: 0.2s all linear;
+}
+
+#checkbox:checked {
+  appearance: auto;
+}
+
+#send {
+  grid-column: 2 / 3;
+  margin: 0 64px;
+}
+
+.mobileText,
+.warning {
+  display: none;
+}
+
+.warning {
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .section {
+    margin-bottom: 30px;
+  }
+
+  .contact {
+    display: block;
+  }
+  .form {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+  }
+
+  .inputLabel,
+  .checkboxLabel,
+  .desctopText {
+    display: none;
+  }
+
+  .messageContainer {
+    grid-column: 1;
+    grid-row: 4 / 6;
+  }
+
+  #send {
+    grid-column: 1;
+    margin: 0;
+  }
+
+  .mobileText,
+  .warning {
+    display: block;
+  }
+
+  .input::placeholder,
+  textarea::placeholder {
+    color: var(--font-color-active);
+    padding: 10px;
+  }
+}
