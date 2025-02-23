@@ -6,7 +6,7 @@ import App from "@/App";
 
 const AppRoutes = () => {
   return (
-    <Router>
+    <Router basename="/cyberia-test">
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="projects" element={<ProjectPage />} />
